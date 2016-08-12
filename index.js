@@ -28,6 +28,7 @@ if (options.listen && name) {
   server.on('listening', () => quiet || console.error(`listening at "${name}"`))
   server.on('error', error => console.error(error.message))
   server.listen(name)
+  process.on('exit', () => server.close())
 
 } else if (options.connect && name) {
   const stream = network.connect(name)

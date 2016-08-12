@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "docopt": "^0.6.2",
-    "peer-network": "^1.0.0"
+    "peer-network": "^1.2.0"
   }
 }
